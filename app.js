@@ -46,10 +46,8 @@ passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// [CREATE (db will be created at the point of adding/saving first item!) AND] CONNECT TO THE DB 
-mongoose.connect(process.env.DATABASEURL, {useMongoClient: true});
-// mongoose.connect("mongodb://Ante:YelpCamp@ds117136.mlab.com:17136/yelpcampdb", {useMongoClient: true});
-
+var url = process.env.DATABASEURL || "mongodb://localhost/yelpCamp";
+mongoose.connect(url, {useMongoClient: true});
 //seedDb();
 
 
