@@ -47,7 +47,9 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 // [CREATE (db will be created at the point of adding/saving first item to it!) AND] CONNECT TO THE DB 
-mongoose.connect("mongodb://localhost/yelpCamp", {useMongoClient: true});
+mongoose.connect("mongodb://Ante:YelpCamp@ds117136.mlab.com:17136/yelpcampdb", {useMongoClient: true});
+// mongodb://localhost/yelpCamp -> development db
+// mongodb://Ante:YelpCamp@ds117136.mlab.com:17136/yelpcampdb -> production db
 //seedDb();
 
 
