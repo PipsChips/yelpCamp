@@ -1,6 +1,6 @@
 # yelpCampApp
 
-Simple Web Page where you can add image and a description of your favorite campground. Check other posted campgrounds and leave a comment.
+Simple Web Page where you can sign up and add/edit/delete or comment your favorite campgrounds.
 
 Link: <a href='https://gentle-temple-38177.herokuapp.com' target="_blank">https://gentle-temple-38177.herokuapp.com</a>
 
