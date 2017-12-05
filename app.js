@@ -8,7 +8,7 @@ var methodOverride  = require("method-override");
 var flash           = require("connect-flash");
 
 // Requiring Models
-var User = require("./models/user.js")
+var User = require("./models/user.js");
 var Campground = require("./models/campground.js");
 var Comment = require("./models/comment.js");
 
